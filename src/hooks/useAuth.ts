@@ -11,6 +11,7 @@ export function useAuth() {
   return {
     user: state.user,
     isAuthenticated: !!state.accessToken,
+    accessToken: state.accessToken,
     login: authStore.login,
     logout: authStore.logout,
   };
